@@ -76,9 +76,9 @@ body {
 .article h2 { 
     margin-top: 10px;
 }
-.article__img { width: 210px; height: 210px; object-fit: cover; border-radius: 10px;}
+.article__img { width: 210px; height: 210px; object-fit: cover; border-radius: 10px; }
 .float-left { float: left; margin: 8px 16px 8px 0; }
-.article p { margin: 0 0 1em; text-align: justify;}
+.article p { margin: 0 0 1em; text-align: justify; }
 
 .facts { padding: 0 20px 8px; }
 .facts h3 { margin: 10px 0px; }
@@ -86,8 +86,8 @@ body {
 
 .contact { padding: 0 20px 24px; }
 .form { background: #fff7e9; padding: 14px; border: 1px solid var(--border) }
-.form__row { display: grid; gap: 6px; margin-bottom: 12px;}
-label { font-weight: 600;}
+.form__row { display: grid; gap: 6px; margin-bottom: 12px; }
+label { font-weight: 600; }
 
 input[type="text"], input[type="email"], textarea {
     width: 100%; padding: 10px; border: 1px solid #c9ad7a;
@@ -107,15 +107,6 @@ legend { font-weight: 700; margin-bottom: 6px; }
 .btn:hover, .btn:focus-visible { background: #255b33;}
 
 .footer { padding: 14px 20px 26px; font-size: 0.9rem; color: var(--muted); text-align: right; }
-
-.article,
-.facts {
-    display: inline-block;
-    vertical-align: top;
-}
-
-.article { width: 66%; }
-.facts { width: 30%; margin-left: 20px; }
 
 @media (max-width: 520px) {
     .article__img { float: none; display: block; margin: 0 auto 10px; }
