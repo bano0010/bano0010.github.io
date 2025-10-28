@@ -80,9 +80,9 @@ body {
 .float-left { float: left; margin: 8px 16px 8px 0; }
 .article p { margin: 0 0 1em; text-align: justify;}
 
-.facts { padding: 16px 20px; }
+.facts { padding: 0 20px 8px; }
 .facts h3 { margin: 10px 0px; }
-.facts ul { margin: 0; padding-left: 20px;}
+.facts ul { margin: 0; padding-left: 20px; }
 
 .contact { padding: 0 20px 24px; }
 .form { background: #fff7e9; padding: 14px; border: 1px solid var(--border) }
