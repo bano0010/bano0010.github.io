@@ -108,6 +108,15 @@ legend { font-weight: 700; margin-bottom: 6px; }
 
 .footer { padding: 14px 20px 26px; font-size: 0.9rem; color: var(--muted); text-align: right; }
 
+.article,
+.facts {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.article { width: 66%; }
+.facts { width: 30%; margin-left: 20px; }
+
 @media (max-width: 520px) {
     .article__img { float: none; display: block; margin: 0 auto 10px; }
     
