@@ -29,7 +29,8 @@
 
         <!-- Search Bar -->
         <form class="search-bar">
-            <input type="text" placeholder="Search">
+            <label for="search" class="visually-hidden">Search</label>
+            <input type="text" id="search" placeholder="Search">
             <button type="submit">Search</button>
         </form>
 
@@ -38,14 +39,17 @@
 
 
 <!-- 2.Hero Section: main banner image with introductory heading, text, and call-to-action button -->
+<main>
 
 <section class="hero">
     <img src="images/main-banner.jpg" alt="Office interior" class="hero-image">
 
     <div class="hero-content">
         <h1>Welcome to Three Star Media</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#" class="hero-button">Connect with us</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Molestias repellat velit, deserunt similique minima dignissimos.
+        </p>
+        <a href="#" class="hero-button">Connect with us ►</a>
     </div>
 </section>
 
@@ -62,8 +66,12 @@
         <!-- About Text -->
         <div class="about-text">
             <h2>About Us</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Libero unde repellendus exercitationem asperiores ducimus placeat, molestiae 
+                ratione soluta necessitatibus pariatur aliquam consequatur sequi.
+            </p>
+            <p>Amet accusamus, excepturi corrupti et fugiat soluta error inventore 
+                nobis omnis non repellendus.</p>
         </div>
 
     </div>
@@ -82,7 +90,7 @@
             <img src="images/digital.jpg" alt="Digital transformation">
             <h3>Digital Transformation</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Digital Plans</a>
+            <a href="#">Digital Plans ►</a>
         </article>
 
         <!-- service 2 Marketing -->
@@ -90,7 +98,7 @@
             <img src="images/marketing.jpg" alt="Marketing analytics">
             <h3>Marketing</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Marketing Plans</a>
+            <a href="#">Marketing Plans ►</a>
         </article>
 
         <!-- service 3 Video Production-->
@@ -98,7 +106,7 @@
             <img src="images/video.jpg" alt="Video production">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Video Plans</a>
+            <a href="#">Video Plans ►</a>
         </article>
 
         <!-- service 4 Web Development -->
@@ -106,7 +114,7 @@
             <img src="images/web.jpg" alt="Web development">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Web Plans</a>
+            <a href="#">Web Plans ►</a>
         </article>
 
         <!-- service 5 Print -->
@@ -114,7 +122,7 @@
             <img src="images/print.jpg" alt="Print services">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Print Plans</a>
+            <a href="#">Print Plans ►</a>
         </article>
 
     </div>
@@ -127,8 +135,9 @@
 
     <div class="vision-content">
         <h2>Our Vision</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        <a href="#">Learn More</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Explicabo accusantium ipsum quas exercitationem.</p>
+        <a href="#">Learn More ►</a>
     </div>
 </section>
 
@@ -167,43 +176,26 @@
 <!-- Contact Section: includes contact form and location/map placeholder -->
 <section id="contact" class="contact">
     <h2>Contact Us</h2>
+    <h3>Send us a message</h3>
 
-    <div class="contact-grid">
 
         <!-- Contact Form: name, email, and message fields -->
         <form class="contact-form">
-            <label>Full Name</label>
-            <input type="text">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname">
 
-            <label>Email</label>
-            <input type="email">
+            <label for="email">Email</label>
+            <input type="email" id="email">
 
-            <label>Message</label>
-            <textarea rows="5"></textarea>
+            <label for="message">Message</label>
+            <textarea id="message" rows="5"></textarea>
 
             <button type="submit">Send</button>
         </form>
 
-        <!-- Embedded Google Mape -->
-        <div class="map">
-            <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.460697642652!2d-75.76203328450042!3d45.34838397910088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cd1f4c7a9a1d4f7%3A0x9f0356ce0d49d42!2sAlgonquin%20College!5e0!3m2!1sen!2sca!4v1608740999454!5m2!1sen!2sca" 
-                width="150%" 
-                height="450" 
-                style="border:0;" 
-                allowfullscreen="" 
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-        </div>
-
-    </div>
-</section>
-
-
 <!-- Hours of Operation: table listing business hours for weekdays and weekends -->
-<section class="hours">
-    <h2>Hours of Operation</h2>
+
+    <h3>Hours of Operation</h3>
 
     <table>
         <thead>
@@ -223,8 +215,16 @@
             </tr>
         </tbody>
     </table>
+
+    <h3>Location</h3>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4666.932817225278!2d-75.76341643965785!3d45.34927925894166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764879921352!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
+    </div>
+
 </section>
 
+</main>
 
 <!-- Footer: copyright information and image source credit -->
  <footer class="site-footer">
