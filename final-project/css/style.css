@@ -1,0 +1,329 @@
+/*  reset styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+
+/*  Global styles (Mobile First)  */
+
+/* Colours */
+
+:root {
+    --gold: #c78c06;
+    --light-gold: #ffe6ac;
+    --dark: #222;
+    --white: #fff;
+
+
+
+/* body */
+body {
+    font-family: "open sans", sans-serif;
+    background-color: var(--white);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/* Container max-width */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Header */
+h1, h2, h3 {
+
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+}
+
+/* Header (Mobile first) */
+
+.site-header {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 1.5rem 1rem;
+
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2rem;
+
+}
+
+.log img {
+    width: 90px;
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+}
+
+.main-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.1rem;
+
+}
+
+.active {
+    background-color: var(--gold);
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+}
+
+/* search bar */
+.search-bar {
+    display: flex;
+    width: 100%;
+
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.6rem;
+    border: none;
+
+}
+
+.search-bar button {
+
+    background: var(--gold);
+    padding: 0 1.5rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+/* hero */
+
+.hero {
+    position: relative;
+    color: var(--white);
+
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.65);
+    padding: 2rem 1.2rem;
+}
+
+.hero-button {
+    background: var(--gold);
+    padding: 0.8rem 1rem;
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--dark);
+    font-weight: 700;
+}
+
+/* ======================
+   ABOUT US
+   ====================== */
+
+.about-container {
+    padding: 2rem 1rem;
+}
+
+.about-text {
+    background: var(--light-gold);
+    padding: 1rem;
+}
+
+/* ======================
+   SERVICES
+   ====================== */
+
+.services {
+    padding: 2rem 1rem;
+}
+
+.services-grid {
+    display: grid;             /* GRID EXAMPLE */
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.service-card {
+    background: var(--light-gold);
+    padding: 1rem;
+}
+
+/* ======================
+   VISION
+   ====================== */
+
+.vision {
+    position: relative;
+    color: var(--white);
+}
+
+.vision-content {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem 1rem;
+}
+
+/* ======================
+   TEAM
+   ====================== */
+
+.team {
+    padding: 2rem 1rem;
+}
+
+.team-card {
+    background: var(--light-gold);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  
+}
+
+/* ======================
+   CONTACT
+   ====================== */
+
+.contact {
+    padding: 2rem 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+}
+
+.contact-form button {
+    background: var(--gold);
+    color: var(--dark);
+    padding: 0.8rem 1rem;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+
+}
+
+/* ======================
+   HOURS / TABLE
+   ====================== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th {
+    background: var(--gold);
+    padding: 0.75rem;
+    text-align: left;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+}
+
+/* ======================
+   LOCATION MAP
+   ====================== */
+
+.map img {
+    width: 100%;
+    border: 3px solid var(--gold);
+    margin-top: 1rem;
+}
+
+/* ======================
+   FOOTER
+   ====================== */
+
+.site-footer {
+    background: var(--dark);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+
+/* ======================
+   DESKTOP MEDIA QUERY
+   ====================== */
+
+@media (min-width: 760px) {
+
+    /* HEADER */
+    .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    /* HERO */
+    .hero-content {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+        max-width: 50%;
+    }
+
+/* about us layout */
+
+.about-container {
+    display: flex;
+    gap: 2rem;
+
+}
+
+/* services grid */
+
+.services-grid {
+    grid-template-columns: repeat(3, 1fr);
+
+}
+
+/* Team grid */
+
+.team-grid {
+    display: flex;
+    gap: 2rem;
+
+}
+
+}
