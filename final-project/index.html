@@ -16,14 +16,14 @@
     <div class="header-container">
 
         <!-- Logo -->
-        <div class="logo">
-            <img src="images/logo.png" alt="Three Star Media logo">
-        </div>
+        <div class="top-bar">
+            <img src="images/logo.png" alt="Three Star Media logo" class="logo">
+    </div>
 
         <!-- main navigation -->
         <nav class="main-nav">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li  class="active"><a href="#">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#team">Team</a></li>
@@ -33,12 +33,12 @@
 
         <!-- Search Bar -->
         <form class="search-bar">
-            <label for="search" class="visually-hidden">Search</label>
-            <input type="text" id="search" placeholder="Search">
-            <button type="submit">Search</button>
-        </form>
+        <input type="text" placeholder="Search">
+        <button type="submit">
+            <img src="images/search-icon.png" class="searchicon"  alt="Search">
+        </button>
+    </form>
 
-    </div>
 </header>
 
 
@@ -94,7 +94,8 @@
             <img src="images/digital.jpg" alt="Digital transformation">
             <h3>Digital Transformation</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Digital Plans ►</a>
+            <button> <a href="#">Digital Plans ►</a></button>
+           
         </article>
 
         <!-- service 2 Marketing -->
@@ -102,7 +103,8 @@
             <img src="images/marketing.jpg" alt="Marketing analytics">
             <h3>Marketing</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Marketing Plans ►</a>
+            <button> <a href="#">Marketing Plans ►</a></button>
+            
         </article>
 
         <!-- service 3 Video Production-->
@@ -110,7 +112,8 @@
             <img src="images/video.jpg" alt="Video production">
             <h3>Video Production</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Video Plans ►</a>
+            <button>  <a href="#">Video Plans ►</a></button>          
+           
         </article>
 
         <!-- service 4 Web Development -->
@@ -118,7 +121,8 @@
             <img src="images/web.jpg" alt="Web development">
             <h3>Web Development</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Web Plans ►</a>
+            <button>  <a href="#">Web Plans ►</a></button>
+           
         </article>
 
         <!-- service 5 Print -->
@@ -126,7 +130,9 @@
             <img src="images/print.jpg" alt="Print services">
             <h3>Print</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <a href="#">Print Plans ►</a>
+            <button>  <a href="#">Print Plans ►</a></button>
+
+          
         </article>
 
     </div>
@@ -176,13 +182,14 @@
     </div>
 </section>
 
-
 <!-- Contact Section: includes contact form and location/map placeholder -->
 <section id="contact" class="contact">
     <h2>Contact Us</h2>
-    <h3>Send us a message</h3>
-
-
+    
+    <!-- Send us a message - LEFT -->
+    <div class="sendmessage">
+        <h3>Send us a message</h3>
+        
         <!-- Contact Form: name, email, and message fields -->
         <form class="contact-form">
             <label for="fullname">Full Name</label>
@@ -196,44 +203,47 @@
 
             <button type="submit">Send</button>
         </form>
-
-<!-- Hours of Operation: table listing business hours for weekdays and weekends -->
-
-    <h3>Hours of Operation</h3>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Days</th>
-                <th>Hours</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Monday - Friday</td>
-                <td>9 AM - 6 PM</td>
-            </tr>
-            <tr>
-                <td>Saturday - Sunday</td>
-                <td>Closed</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>Location</h3>
-
-    <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4666.932817225278!2d-75.76341643965785!3d45.34927925894166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764879921352!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>>
     </div>
 
+    <!-- Location - RIGHT TOP -->
+    <div class="locations">
+        <h3>Location</h3>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4666.932817225278!2d-75.76341643965785!3d45.34927925894166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1764879921352!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <!-- Hours of Operation - BOTTOM FULL WIDTH -->
+    <div class="hours">
+        <h3>Hours of operation</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>9 AM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday - Sunday</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
 </section>
 
 </main>
 
 <!-- Footer: copyright information and image source credit -->
  <footer class="site-footer">
-    <p>&copy; 2020 Three Star Media</p>
-    <p>All images are taken from Unsplash</p>
+    <p>&copy; Copyright 2020 Three Star Media, 2020</p>
+    <p>All images are taken from <a href="https://unsplash.com/">Unsplash</a></p>
 </footer>
 
 </body>
